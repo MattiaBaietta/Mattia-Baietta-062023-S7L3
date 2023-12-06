@@ -1,0 +1,30 @@
+
+@import "bootstrap-5.3.2/scss/bootstrap.scss";
+
+
+.widthimg{
+    width: 40px;
+    height: 40px;
+}
+li{
+    list-style: none;
+}
+.carrello{
+    position: fixed;
+    bottom: 50%;
+    cursor: pointer;
+}
+
+/*.none{
+    display: none;
+}*/
+
+.fixed{
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    background-color: white;
+    max-width: 400px;
+    display: flex;
+    
+}
