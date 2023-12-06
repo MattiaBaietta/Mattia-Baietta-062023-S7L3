@@ -1,5 +1,5 @@
 const urlApi = "https://striveschool-api.herokuapp.com/books"
-let creali=document.createElement("li")
+
 
 let arrayApi
 
@@ -52,6 +52,7 @@ function addBuyfunction(a){
 }
 
 function creaCopia(a,i){
+    let creali=document.createElement("li")
     creali.innerHTML+=`<div id="DelDiv`+i+`"class= "container d-flex ">
            <img class=" widthimg " src="`+ a[i].img + `" alt="Title" />
            <div>
@@ -66,7 +67,7 @@ function creaCopia(a,i){
            
 }
 function rimuovidalCarrello(i){
-    document.getElementById("Del"+i).addEventListener("click",function(){
+    document.getElementById("Del"+i).addEventListener("click", function () {
             document.getElementById("DelDiv"+i).remove()
             localStorage.removeItem(i)
     })
